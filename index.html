@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS- Inheritance</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+           color: yellow;
+        }
+        h1,pre{
+            background-color: pink;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS- Inheritance</h1>
+   <p>Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype</p>
+   <pre>
+    const parent = {
+    fullname : 'Abhi-Mishra',
+    mobile : 12345,
+    dep : 'mba'
+}
+const child= {
+    __proto__:parent
+}
+console.log(child.fullname);</pre>
+
+<p>Write code to explain prototype chaining</p>
+<pre>
+
+</pre>   
+
+<P>Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays</P>
+<PRE>
+    arr1 = [1,3,2,5,]
+arr2 = [6,4,2,7]
+arr3 = [1,4,3,0]
+
+const arrsum = {
+    addAll : function (arr) {
+  let sum = 0;
+  for(let i=0; i<=arr.length; i++ ){
+    sum = sum+aa[i];
+  }
+  console.log(sum);
+}
+}
+Array.__proto__= arrsum;
+Array.addAll(arr1);
+Array.addAll(arr2);
+Array.addAll(arr3);
+</PRE>
+
+<p>Write a JavaScript function to retrieve all the names of object's own and inherited properties.</p>
+<pre>var obj1 = {
+    name:'Abhi',
+    dep : 'cse'
+       
+}
+ console.log(obj1.name);</pre>
+<script src="./main.js"></script>
+</body>
+</html>
